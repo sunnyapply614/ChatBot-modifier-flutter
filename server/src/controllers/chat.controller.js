@@ -5,10 +5,7 @@ const chatController = {
   accessChat: async (req, res, next) => {
     const { userId } = req.body;
 
-    if (!userId) {
-      console.log("UserId param not sent with request");
-      return res.sendStatus(400);
-    }
+
 
     var isChat = await chatModel
       .find({
