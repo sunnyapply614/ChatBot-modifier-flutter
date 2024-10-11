@@ -16,7 +16,13 @@ class AppTheme {
       headline2: TextStyle(color: Colors.black),
       // Add more text styles as needed
     ),
-
+    inputDecorationTheme: InputDecorationTheme(
+      filled: true,
+      fillColor: Colors.white,
+      border: OutlineInputBorder(
+        borderSide: BorderSide(color: Colors.black54),
+      ),
+    ),
   );
 
   static ThemeData darkTheme = ThemeData(
