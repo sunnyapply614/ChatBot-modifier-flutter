@@ -9,7 +9,13 @@ class AppTheme {
       onPrimary: Colors.white,
       onBackground: Colors.black,
     ),
-
+    textTheme: TextTheme(
+      bodyText1: TextStyle(color: Colors.black),
+      bodyText2: TextStyle(color: Colors.black),
+      headline1: TextStyle(color: Colors.black),
+      headline2: TextStyle(color: Colors.black),
+      // Add more text styles as needed
+    ),
     inputDecorationTheme: InputDecorationTheme(
       filled: true,
       fillColor: Colors.white,
