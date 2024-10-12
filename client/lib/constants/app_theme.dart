@@ -1,14 +1,7 @@
 import 'package:flutter/material.dart';
 
 class AppTheme {
-  static ThemeData lightTheme = ThemeData(
-    primaryColor: Colors.blue, // Replace with your app's primary color
-    scaffoldBackgroundColor: Colors.white,
-    colorScheme: ColorScheme.light(
-      primary: Colors.blue, // Replace with your app's primary color
-      onPrimary: Colors.white,
-      onBackground: Colors.black,
-    ),
+
     textTheme: TextTheme(
       bodyText1: TextStyle(color: Colors.black),
       bodyText2: TextStyle(color: Colors.black),
