@@ -34,7 +34,6 @@ class AppStyles {
         borderSide: BorderSide.none,
         borderRadius: BorderRadius.circular(40),
       ),
-
     );
   }
 }
