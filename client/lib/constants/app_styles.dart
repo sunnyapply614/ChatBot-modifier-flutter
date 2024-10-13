@@ -26,7 +26,10 @@ class AppStyles {
       fillColor: AppColors.greyColor,
       hoverColor: AppColors.greyColor,
       focusColor: AppColors.greyColor,
-
+      focusedBorder: OutlineInputBorder(
+        borderSide: BorderSide.none,
+        borderRadius: BorderRadius.circular(40),
+      ),
       enabledBorder: OutlineInputBorder(
         borderSide: BorderSide.none,
         borderRadius: BorderRadius.circular(40),
