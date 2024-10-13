@@ -1,6 +1,4 @@
-import 'dart:convert';
-import 'package:client/services/config.dart';
-import 'package:http/http.dart' as http;
+
 
 class AuthService {
   static registerUser(reqBody) async {
