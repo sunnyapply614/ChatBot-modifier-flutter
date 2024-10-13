@@ -34,10 +34,7 @@ class AppStyles {
         borderSide: BorderSide.none,
         borderRadius: BorderRadius.circular(40),
       ),
-      errorBorder: OutlineInputBorder(
-        borderSide: BorderSide.none,
-        borderRadius: BorderRadius.circular(40),
-      ),
+
     );
   }
 }
