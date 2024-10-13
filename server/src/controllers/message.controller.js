@@ -3,17 +3,7 @@ const chatModel = require('../models/chat.model')
 const userModel = require('../models/user.model')
 
 const messageController = {
-    allMessages: async (req, res) => {
-        try {
-            const messages = await messageModel.find({ chat: req.params.chatId })
-                .populate("sender", "name image email")
-                .populate("chat")
-            res.json(messages)
-        } catch (error) {
-            res.status(400)
-            throw new Error(error.message)
-        }
-    },
+
 
     sendMessage: async (req, res) => {
         const { content, chatId } = req.body
