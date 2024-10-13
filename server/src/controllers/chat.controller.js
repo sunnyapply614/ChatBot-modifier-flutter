@@ -26,7 +26,14 @@ const chatController = {
       select: "name image email",
     });
 
-
+    if (isChat.length > 0) {
+      res.send(isChat[0]);
+    } else {
+      var chatData = {
+        chatName: "sender",
+        isGroupChat: false,
+        users: [req.user._id, userId],
+      };
 
       try {
         const createdChat = await chatModel.create(chatData);
