@@ -12,7 +12,14 @@ class AuthService {
     return response;
   }
 
-
+  static loginUser(reqBody) async {
+    final response = await http.post(
+      Uri.parse(loginUrl),
+      headers: {'content-type': 'application/json'},
+      body: jsonEncode(reqBody),
+    );
+    return response;
+  }
 
   static updateUser(id, reqBody) async {
     final uri = '$updateUrl/$id';
