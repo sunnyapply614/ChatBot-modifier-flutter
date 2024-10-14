@@ -9,7 +9,7 @@ class FAQScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
+      appBar: const AppBarWidget(text: 'FAQ'),
       body: Padding(
         padding: const EdgeInsets.all(20),
         child: Column(
