@@ -18,7 +18,10 @@ class FAQScreen extends StatelessWidget {
               text: 'What is Chatify?',
               subText: 'Chatify is greatest chatting platform of this century.',
             ),
-
+            SizedBox(height: AppDimensions.largeSpacing),
+            ItemFAQWidget(
+              text: 'Is Chatify is safe for me?',
+            ),
             SizedBox(height: AppDimensions.largeSpacing),
             ItemFAQWidget(
               text: 'How to send Messages on Chatify?',
