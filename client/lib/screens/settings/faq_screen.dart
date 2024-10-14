@@ -4,7 +4,7 @@ import 'package:client/widgets/item_faq_widget.dart';
 import 'package:flutter/material.dart';
 
 class FAQScreen extends StatelessWidget {
-  const FAQScreen({super.key});
+
 
   @override
   Widget build(BuildContext context) {
