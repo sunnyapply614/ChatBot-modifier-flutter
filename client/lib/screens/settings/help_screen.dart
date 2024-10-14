@@ -2,7 +2,10 @@ import 'package:client/helpers/helper_function.dart';
 import 'package:client/screens/settings/app_info_screen.dart';
 import 'package:client/screens/settings/faq_screen.dart';
 import 'package:client/screens/settings/lorem_screen.dart';
-
+import 'package:client/widgets/appbar_widget.dart';
+import 'package:client/widgets/dashline_widget.dart';
+import 'package:client/widgets/item_text_show_widget.dart';
+import 'package:flutter/material.dart';
 
 class HelpScreen extends StatelessWidget {
   const HelpScreen({super.key});
