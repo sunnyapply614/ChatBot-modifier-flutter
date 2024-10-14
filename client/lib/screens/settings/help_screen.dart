@@ -50,13 +50,7 @@ class HelpScreen extends StatelessWidget {
                 );
               },
             ),
-            const DashlineWidget(margin: EdgeInsets.symmetric(vertical: 10)),
-            ItemTextShowWidget(
-              text: 'App Info',
-              func: () {
-                nextScreen(context, const AppInfoScreen());
-              },
-            ),
+
           ],
         ),
       ),
