@@ -27,17 +27,7 @@ class HelpScreen extends StatelessWidget {
               },
             ),
             const DashlineWidget(margin: EdgeInsets.symmetric(vertical: 10)),
-            ItemTextShowWidget(
-              text: 'Term & Conditions',
-              func: () {
-                nextScreen(
-                  context,
-                  const LoremScreen(
-                    title: 'Terms & Conditions',
-                  ),
-                );
-              },
-            ),
+
             const DashlineWidget(margin: EdgeInsets.symmetric(vertical: 10)),
             ItemTextShowWidget(
               text: 'Privacy Policy',
