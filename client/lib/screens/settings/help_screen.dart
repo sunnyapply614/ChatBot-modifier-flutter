@@ -8,7 +8,7 @@ import 'package:client/widgets/item_text_show_widget.dart';
 import 'package:flutter/material.dart';
 
 class HelpScreen extends StatelessWidget {
-  const HelpScreen({super.key});
+
 
   @override
   Widget build(BuildContext context) {
