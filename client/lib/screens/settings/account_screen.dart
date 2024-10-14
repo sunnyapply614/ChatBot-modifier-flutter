@@ -22,14 +22,7 @@ class AccountScreen extends StatefulWidget {
 class _AccountScreenState extends State<AccountScreen> {
   bool _isLoading = false;
 
-  void deleteUser() async {
-    final response = await AuthService.deleteUser(widget.id);
-    final jsonResponse = jsonDecode(response.body);
-    if (jsonResponse['status']) {
-      // ignore: use_build_context_synchronously
-      nextScreen(context, const SigninScreen());
-    }
-  }
+
 
   @override
   Widget build(BuildContext context) {
