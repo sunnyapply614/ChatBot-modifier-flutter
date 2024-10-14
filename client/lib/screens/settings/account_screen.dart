@@ -10,7 +10,14 @@ import 'package:client/widgets/dashline_widget.dart';
 import 'package:client/widgets/item_text_show_widget.dart';
 import 'package:flutter/material.dart';
 
+class AccountScreen extends StatefulWidget {
+  const AccountScreen({super.key, required this.id});
 
+  final String id;
+
+  @override
+  State<AccountScreen> createState() => _AccountScreenState();
+}
 
 class _AccountScreenState extends State<AccountScreen> {
   bool _isLoading = false;
