@@ -20,15 +20,7 @@ class _ChatSettingScreenState extends State<ChatSettingScreen> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: const [
-            ItemTextSwitchWidget(text: 'Separate Groups', switchValue: true),
-            DashlineWidget(margin: EdgeInsets.symmetric(vertical: 10)),
-            ItemTextSwitchWidget(text: 'Enter is Send'),
-            DashlineWidget(margin: EdgeInsets.symmetric(vertical: 10)),
-            ItemTextSwitchWidget(text: 'Media Visibility', switchValue: true),
-            DashlineWidget(margin: EdgeInsets.symmetric(vertical: 10)),
-            ItemTextSwitchWidget(text: 'Backup Chat Regularly'),
-            DashlineWidget(margin: EdgeInsets.symmetric(vertical: 10)),
-            ItemTextSwitchWidget(text: 'Keep Chats Archived'),
+
           ],
         ),
       ),
