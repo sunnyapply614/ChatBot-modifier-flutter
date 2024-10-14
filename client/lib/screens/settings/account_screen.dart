@@ -41,7 +41,12 @@ class _AccountScreenState extends State<AccountScreen> {
         padding: const EdgeInsets.all(20),
         child: Column(
           children: [
-
+            const ItemTextShowWidget(text: 'Privacy'),
+            const DashlineWidget(margin: EdgeInsets.symmetric(vertical: 10)),
+            const ItemTextShowWidget(text: 'Change Email'),
+            const DashlineWidget(margin: EdgeInsets.symmetric(vertical: 10)),
+            const ItemTextShowWidget(text: 'Request Account info'),
+            const DashlineWidget(margin: EdgeInsets.symmetric(vertical: 10)),
             _isLoading
                 ? Column(
                     children: const [
