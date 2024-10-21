@@ -3,7 +3,14 @@ import 'package:flutter/material.dart';
 
 class AppStyles {
   static InputDecoration inputDecoration(text, IconData? icon) {
-
+    return InputDecoration(
+      contentPadding: const EdgeInsets.all(20),
+      isDense: true,
+      hintText: text,
+      hintStyle: const TextStyle(
+        fontWeight: FontWeight.w500,
+        fontSize: 16,
+      ),
       prefixIcon: icon != null
           ? Padding(
               padding: const EdgeInsets.only(left: 20, right: 10),
