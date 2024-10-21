@@ -33,13 +33,7 @@ class AppTheme {
       onPrimary: Colors.white,
       onBackground: Colors.white,
     ),
-    textTheme: TextTheme(
-      bodyText1: TextStyle(color: Colors.white),
-      bodyText2: TextStyle(color: Colors.white),
-      headline1: TextStyle(color: Colors.white),
-      headline2: TextStyle(color: Colors.white),
-      // Add more text styles as needed
-    ),
+
     inputDecorationTheme: InputDecorationTheme(
       filled: true,
       fillColor: Colors.grey[800],
