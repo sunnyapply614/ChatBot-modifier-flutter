@@ -26,13 +26,7 @@ class AppTheme {
   );
 
   static ThemeData darkTheme = ThemeData(
-    primaryColor: Colors.blueGrey, // Replace with your app's primary color for dark mode
-    scaffoldBackgroundColor: Colors.black,
-    colorScheme: ColorScheme.dark(
-      primary: Colors.blueGrey, // Replace with your app's primary color for dark mode
-      onPrimary: Colors.white,
-      onBackground: Colors.white,
-    ),
+
     textTheme: TextTheme(
       bodyText1: TextStyle(color: Colors.white),
       bodyText2: TextStyle(color: Colors.white),
