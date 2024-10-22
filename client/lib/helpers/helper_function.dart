@@ -83,4 +83,6 @@ Future<dynamic> showModalBottom(
   );
 }
 
-
+String getNameInEmail(String email) {
+  return email.substring(0, email.indexOf('@'));
+}
