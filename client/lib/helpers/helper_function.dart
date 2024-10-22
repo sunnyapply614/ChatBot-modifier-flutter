@@ -1,6 +1,4 @@
-import 'package:client/constants/app_dimensions.dart';
-import 'package:client/widgets/button_widget.dart';
-import 'package:flutter/material.dart';
+
 
 void nextScreen(context, page) {
   Navigator.push(
