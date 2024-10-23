@@ -18,7 +18,8 @@ const chatController = {
           { users: { $elemMatch: { $eq: userId } } },
         ],
       })
-
+      .populate("users", "-password")
+      .populate("latestMessage");
 
     isChat = await userModel.populate(isChat, {
       path: "latestMessage.sender",
