@@ -1,4 +1,5 @@
-
+const userModel = require('../models/user.model')
+const UserService = require('../services/user.service')
 
 const userController = {
     handleRegister: async (req, res, next) => {
