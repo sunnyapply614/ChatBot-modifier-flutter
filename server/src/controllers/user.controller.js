@@ -25,7 +25,8 @@ const userController = {
 
                 let tokenData = { _id: user._id, name: user.name, email: user.email, image: user.image }
                 const token = await UserService.generateToken(tokenData, 'secretKey', '1d')
-
+                    { name: { $regex: req.query.search, $options: "i" } },
+                    { email: { $regex: req.query.search, $options: "i" } },
                 res.status(200).json({ status: true, token })
             })
             .catch(next)
