@@ -17,12 +17,10 @@ const userController = {
                 if (!user) {
                     throw new Error(`User don't exist`)
                 }
-
                 const isMatch = await user.comparePassword(password)
                 if (isMatch === false) {
                     throw new Error(`Password invalid`)
                 }
-
                 let tokenData = { _id: user._id, name: user.name, email: user.email, image: user.image }
                 const token = await UserService.generateToken(tokenData, 'secretKey', '1d')
                     { name: { $regex: req.query.search, $options: "i" } },
