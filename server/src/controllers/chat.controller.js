@@ -1,4 +1,5 @@
-
+const chatModel = require("../models/chat.model");
+const userModel = require("../models/user.model");
 
 const chatController = {
   accessChat: async (req, res, next) => {
