@@ -36,7 +36,11 @@ const chatController = {
       };
 
       try {
-
+        const createdChat = await chatModel.create(chatData);
+        const fullChat = await chatModel
+          .findOne({ _id: createdChat._id })
+          .populate("users", "-password");
+        res.status(200).json(fullChat);
       } catch (error) {
         res.status(400);
         throw new Error(error.message);
