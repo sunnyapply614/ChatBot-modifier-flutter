@@ -2,7 +2,7 @@ import 'package:client/constants/app_colors.dart';
 import 'package:client/constants/app_dimensions.dart';
 import 'package:flutter/material.dart';
 
-final appBarHeight = AppBar().preferredSize.height;
+
 
 class AppBarWidget extends StatefulWidget implements PreferredSizeWidget {
   const AppBarWidget({super.key, this.text, this.avatar, this.actions});
