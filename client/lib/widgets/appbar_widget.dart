@@ -1,6 +1,4 @@
-import 'package:client/constants/app_colors.dart';
-import 'package:client/constants/app_dimensions.dart';
-import 'package:flutter/material.dart';
+
 
 final appBarHeight = AppBar().preferredSize.height;
 
