@@ -1,4 +1,6 @@
-
+const messageModel = require('../models/message.model')
+const chatModel = require('../models/chat.model')
+const userModel = require('../models/user.model')
 
 const messageController = {
     allMessages: async (req, res) => {
