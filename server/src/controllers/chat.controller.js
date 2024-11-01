@@ -51,7 +51,11 @@ const chatController = {
   fetchChats: async (req, res) => {
     try {
       chatModel
-
+        .find({ users: { $elemMatch: { $eq: req.user._id } } })
+        .populate("users", "-password")
+        .populate("groupAdmin", "-password")
+        .populate("latestMessage")
+        .sort({ updatedAt: -1 })
         .then(async (results) => {
           results = await userModel.populate(results, {
             path: "latestMessage.sender",
