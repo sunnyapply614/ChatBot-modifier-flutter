@@ -10,21 +10,7 @@ const chatController = {
       return res.sendStatus(400);
     }
 
-    var isChat = await chatModel
-      .find({
-        isGroupChat: false,
-        $and: [
-          { users: { $elemMatch: { $eq: req.user._id } } },
-          { users: { $elemMatch: { $eq: userId } } },
-        ],
-      })
-      .populate("users", "-password")
-      .populate("latestMessage");
 
-    isChat = await userModel.populate(isChat, {
-      path: "latestMessage.sender",
-      select: "name image email",
-    });
 
     if (isChat.length > 0) {
       res.send(isChat[0]);
