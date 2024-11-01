@@ -21,7 +21,10 @@ const chatController = {
       .populate("users", "-password")
       .populate("latestMessage");
 
-
+    isChat = await userModel.populate(isChat, {
+      path: "latestMessage.sender",
+      select: "name image email",
+    });
 
     if (isChat.length > 0) {
       res.send(isChat[0]);
