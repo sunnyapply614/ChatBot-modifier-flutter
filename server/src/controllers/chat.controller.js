@@ -30,7 +30,9 @@ const chatController = {
       res.send(isChat[0]);
     } else {
       var chatData = {
-
+        chatName: "sender",
+        isGroupChat: false,
+        users: [req.user._id, userId],
       };
 
       try {
