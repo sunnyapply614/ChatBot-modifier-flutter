@@ -61,7 +61,7 @@ const messageController = {
                 res.json(message)
             })
             .catch(next)
-    }
+        }
 }
 
 module.exports = messageController
