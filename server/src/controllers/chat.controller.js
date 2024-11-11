@@ -12,7 +12,7 @@ const chatController = {
 
     var isChat = await chatModel
       .find({
-        isGroupChat: false,
+
         $and: [
           { users: { $elemMatch: { $eq: req.user._id } } },
           { users: { $elemMatch: { $eq: userId } } },
