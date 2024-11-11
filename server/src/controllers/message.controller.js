@@ -23,7 +23,11 @@ const messageController = {
             return res.sendStatus(400)
         }
 
-
+        var newMessage = {
+            sender: req.user._id,
+            content: content,
+            chat: chatId,
+        }
 
         try {
             var message = await messageModel.create(newMessage)
