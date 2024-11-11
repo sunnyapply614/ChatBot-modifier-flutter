@@ -2,13 +2,7 @@ const userModel = require('../models/user.model')
 const UserService = require('../services/user.service')
 
 const userController = {
-    handleRegister: async (req, res, next) => {
-        await UserService.registerUser(req.body)
-            .then(() => {
-                res.json({ status: true, success: 'User Registered Successfully' })
-            })
-            .catch(next)
-    },
+
 
     handleLogin: async (req, res, next) => {
         const { email, password } = req.body
