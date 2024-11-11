@@ -51,7 +51,10 @@ const messageController = {
     readMessage: async (req, res, next) => {
         const messageId = req.params.messageId
 
-
+        if (!messageId) {
+            console.log("Invalid data passed into request")
+            return res.sendStatus(400)
+        }
 
         await messageModel.findByIdAndUpdate(messageId, { readBy: req.user._id })
             .then(async (message) => {
